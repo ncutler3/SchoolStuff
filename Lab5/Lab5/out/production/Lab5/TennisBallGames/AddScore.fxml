@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TennisBallGames.AddScoreController">
+   <children>
+      <ComboBox fx:id="Match" layoutX="179.0" layoutY="154.0" prefWidth="225.0" />
+      <Label layoutX="123.0" layoutY="21.0" text="Add Match Score">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="107.0" layoutY="158.0" text="Match" />
+      <Label layoutX="43.0" layoutY="207.0" text="Home Team Score" />
+      <Label layoutX="43.0" layoutY="246.0" text="Visitor Team Score" />
+      <TextField fx:id="homeTeamScore" layoutX="177.0" layoutY="203.0" />
+      <TextField fx:id="visitorTeamScore" layoutX="177.0" layoutY="242.0" />
+      <Button fx:id="saveBtn" layoutX="363.0" layoutY="347.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Button fx:id="cancelBtn" layoutX="266.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+   </children>
+</AnchorPane>
